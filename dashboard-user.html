@@ -256,7 +256,7 @@
             const total = reports.length;
             const pending = reports.filter(r => r.status === 'pending').length;
             const progress = reports.filter(r => r.status === 'in_progress' || r.status === 'under_progress').length;
-            const resolved = reports.filter(r => r.status === 'resolved').length;
+            const resolved = reports.filter(r => r.status === 'concluded').length;
 
             document.getElementById('totalReports').textContent = total;
             document.getElementById('pendingReports').textContent = pending;
